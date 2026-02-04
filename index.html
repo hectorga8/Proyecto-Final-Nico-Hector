@@ -1,77 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H&N Cozy Bookstore</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="layout">
-        <header class="header">
-            <div class="header-top">
-                <div class="logo">
-                    <div class="logo-circle"></div>
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Buscar">
-                    <button type="submit">🔍</button>
-                </div>
-                <div class="header-icons">
-                    <a href="#account">👤 ACCOUNT</a>
-                    <a href="#cart">🛒 CART (0$)</a>
-                    <a href="#wishlist">❤️ WISHLIST</a>
-                </div>
+      <header class="header">
+        <div class="header-top">
+          <div class="logo">
+            <img
+              src="./img/logobueno.png"
+              alt="H&N Cozy Bookstore Logo"
+              class="logo-img"
+            />
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar" />
+            <button type="submit">
+              <img src="./img/search.svg" alt="Buscar" class="search-icon" />
+            </button>
+          </div>
+          <div class="header-icons">
+            <a href="#account">
+              <img src="./img/user.svg" alt="Account" class="icon" />
+              ACCOUNT
+            </a>
+            <a href="#cart">
+              <img src="./img/cart.svg" alt="Cart" class="icon" />
+              CART (0$)
+            </a>
+            <a href="#wishlist">
+              <img src="./img/heart.svg" alt="Wishlist" class="icon" />
+              WISHLIST
+            </a>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#home">INICIO</a>
+            </li>
+            <li>
+              <a href="#about">SOBRE NOSOTROS</a>
+            </li>
+            <li>
+              <a href="#books">LIBROS</a>
+            </li>
+            <li>
+              <a href="#new-release">PELÍCULAS</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACTO</a>
+            </li>
+            <li>
+              <a href="#blog">BLOG</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="best-sellers">
+        <h2>Libros más Vendidos</h2>
+        <div class="books-grid">
+          <div class="book-card">
+            <div class="book-image">
+              <img src="./img/dostorres.jpg" alt="Las dos Torres" />
+              <button class="add-to-cart">AÑADIR AL CARRITO</button>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li>
-                        <a href="#home">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="#about">SOBRE NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="#books">LIBROS</a>
-                    </li>
-                    <li>
-                        <a href="#new-release">PELÍCULAS</a>
-                    </li>
-                    <li>
-                        <a href="#contact">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="#blog">BLOG</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="best-sellers">
-            <h2>Best Sellers</h2>
-            <!-- Contenido aquí -->
-        </section>
-
-        <section class="new-releases">
-            <h2>New Releases</h2>
-            <!-- Contenido aquí -->
-        </section>
-
-        <section class="essentials">
-            <h2>Essentials</h2>
-            <!-- Contenido aquí -->
-        </section>
-
-        <section class="reviews">
-            <h2>Reviews</h2>
-            <!-- Contenido aquí -->
-        </section>
-
-        <footer class="footer">
-            <p>&copy; 2026 H&N C
+            <h3 class="book-title">El señor de los anillos: Las dos torres</h3>
+            <p class="book-author">J. R. R. Tolkien</p>
+            <p class="book-price">€ 20.00</p>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="./img/dune.jpg" alt="Dune" />
+              <button class="add-to-cart">AÑADIR AL CARRITO</button>
+            </div>
+            <h3 class="book-title">Dune</h3>
+            <p class="book-author">Frank Herbert</p>
+            <p class="book-price">€ 18.00</p>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="./img/quijote.jpg" alt="Quijote" />
+              <button class="add-to-cart">AÑADIR AL CARRITO</button>
+            </div>
+            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <p class="book-author">Miguel de Cervantes</p>
+            <p class="book-price">€ 25.00</p>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="./img/gatsby.jpg" alt="El Gran Gatsby" />
+              <button class="add-to-cart">AÑADIR AL CARRITO</button>
+            </div>
+            <h3 class="book-title">El gran Gatsby</h3>
+            <p class="book-author">F. Scott Fitzgerald</p>
+            <p class="book-price">€ 15.00</p>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <a href="#all-products" class="view-all">Todos Los Productos →</a>
+      </section>
+      <section class="new-releases">
+        <h2>New Releases</h2>
+        <!-- Contenido aquí -->
+      </section>
+      <section class="essentials">
+        <h2>Essentials</h2>
+        <!-- Contenido aquí -->
+      </section>
+      <section class="reviews">
+        <h2>Reviews</h2>
+        <!-- Contenido aquí -->
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Libros y Películas</h3>
+            <p>Venta de Libros y Películas. Imaginación ilimitada.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre Nosotros</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>apruebanosPeter@gmail.com</p>
+            <p>+34 7061543815</p>
+            <p>Rivas-Vaciamadrid, Madrid - 28521</p>
+          </div>
+          <div class="footer-section">
+            <h3>Aceptamos</h3>
+            <div class="payment-icons">
+              <img src="visa-icon.png" alt="Visa" />
+              <img src="mastercard-icon.png" alt="Mastercard" />
+              <img src="amex-icon.png" alt="American Express" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Books and Movies. All rights reserved. | Héctor & Nicola
+            ❤️
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
