@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.layout {
+    width: 100%;
+    display: grid;
+    grid:
+        "header" auto
+        "best-sellers" 1fr
+        "new-releases" auto
+        "essentials" auto
+        "reviews" auto
+        "footer" auto
+        / 1fr;
+    gap: 8px;
+}
+.header { 
+    grid-area: header;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Header Top */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f8f8f8;
+    justify-content: center;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 30px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.search-bar button {
+    padding: 10px 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.header-icons {
+    display: flex;
+    gap: 70px;
+}
+.header-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Main Navigation */
+.main-nav {
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 3px solid #5d4fb5;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    align-items: center;
+}
+.main-nav li {
+    border-right: 1px solid #ddd;
+    padding-right: 50px;
+}
+
+.main-nav li:last-child {
+    border-right: none;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-nav li a:hover {
+    color: #5d4fb5;
+}
