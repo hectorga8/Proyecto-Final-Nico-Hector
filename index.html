@@ -1,116 +1,229 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H&N Cozy Bookstore</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <header class="header">
-        <div class="header-top">
-          <div class="logo">
-            <img
-              src="./img/logobueno.png"
-              alt="H&N Cozy Bookstore Logo"
-              class="logo-img"
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H&N Cozy Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <header class="header">
+      <div class="header-top">
+        <div class="logo">
+          <img src="./img/logobueno.png" alt="H&N Cozy Bookstore Logo" class="logo-img" />
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar" />
+          <button type="submit">
+            <img src="./img/search.svg" alt="Buscar" class="search-icon" />
+          </button>
+        </div>
+        <div class="header-icons">
+          <a href="#account">
+            <img src="./img/user.svg" alt="Account" class="icon" />
+            CUENTA
+          </a>
+          <a href="#cart">
+            <img src="./img/cart.svg" alt="Cart" class="icon" />
+            CARRITO
+          </a>
+          <a href="#wishlist">
+            <img src="./img/heart.svg" alt="Wishlist" class="icon" />
+            DESEADOS
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#home">INICIO</a>
+          </li>
+          <li>
+            <a href="#about">SOBRE NOSOTROS</a>
+          </li>
+          <li>
+            <a href="#books">LIBROS</a>
+          </li>
+          <li>
+            <a href="#new-release">PELÍCULAS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACTO</a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    <section class="best-sellers">
+      <div class="section-title">
+        <span class="title-line"></span>
+        <h2>Libros más Vendidos</h2>
+        <span class="title-line"></span>
+      </div>
+      <div class="books-grid">
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/dostorres.jpg" alt="Las dos Torres" />
+            <button class="add-to-cart">AÑADIR AL CARRITO</button>
           </div>
-          <div class="search-bar">
-            <input type="text" placeholder="Buscar" />
-            <button type="submit">
-              <img src="./img/search.svg" alt="Buscar" class="search-icon" />
-            </button>
+          <h3 class="book-title">El señor de los anillos: Las dos torres</h3>
+          <p class="book-author">J. R. R. Tolkien</p>
+          <p class="book-price">€ 20.00</p>
+        </div>
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/dune.jpg" alt="Dune" />
+            <button class="add-to-cart">AÑADIR AL CARRITO</button>
           </div>
-          <div class="header-icons">
-            <a href="#account">
-              <img src="./img/user.svg" alt="Account" class="icon" />
-              CUENTA
-            </a>
-            <a href="#cart">
-              <img src="./img/cart.svg" alt="Cart" class="icon" />
-              CARRITO
-            </a>
-            <a href="#wishlist">
-              <img src="./img/heart.svg" alt="Wishlist" class="icon" />
-              DESEADOS
-            </a>
+          <h3 class="book-title">Dune</h3>
+          <p class="book-author">Frank Herbert</p>
+          <p class="book-price">€ 18.00</p>
+        </div>
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/quijote.jpg" alt="Quijote" />
+            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+          </div>
+          <h3 class="book-title">Don Quijote de la Mancha</h3>
+          <p class="book-author">Miguel de Cervantes</p>
+          <p class="book-price">€ 25.00</p>
+        </div>
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/gatsby.jpg" alt="El Gran Gatsby" />
+            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+          </div>
+          <h3 class="book-title">El gran Gatsby</h3>
+          <p class="book-author">F. Scott Fitzgerald</p>
+          <p class="book-price">€ 15.00</p>
+        </div>
+      </div>
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <a href="#all-products" class="view-all">Todos Los Productos →</a>
+    </section>
+    <section class="awards-banner">
+      <div class="banner-content">
+        <h3>2026 Premios Nacionales de la Literatura</h3>
+        <button class="explore-btn">Explorar</button>
+      </div>
+      <div class="banner-image">
+        <img src="./img/trophy.svg" alt="Trophy and Books" />
+      </div>
+    </section>
+    <section class="featured-book">
+      <div class="featured-book-image">
+        <img src="./img/palabrasradiantes.jpg" alt="Palabras Radiantes" />
+      </div>
+      <div class="featured-book-content">
+        <h2>NOVEDADES</h2>
+        <p class="featured-author">BRANDON SANDERSON</p>
+        <h3 class="featured-title">Palabras Radiantes</h3>
+        <p class="featured-description">
+          Los Caballeros Radiantes deben volver a alzarse. Los antiguos
+          juramentos por fin se han pronunciado. Los hombres buscan lo que se
+          perdió. Temo que la búsqueda los destruya.
+        </p>
+        <p class="featured-price">€ 25.00</p>
+        <button class="view-more-btn">VER MÁS →</button>
+      </div>
+    </section>
+    <section class="promo-banner">
+      <div class="promo-content">
+        <h2>Todos nuestros libros al 50%!<br />¡No te pierdas esta oferta!</h2>
+        <p class="promo-description">
+          Este año, ¡todos nuestros libros están disponibles al 50%!
+        </p>
+        <div class="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number">768</span>
+            <span class="countdown-label">DÍAS</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number">01</span>
+            <span class="countdown-label">HORAS</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number">27</span>
+            <span class="countdown-label">MIN</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number">55</span>
+            <span class="countdown-label">SEG</span>
           </div>
         </div>
-        <nav class="main-nav">
-          <ul>
-            <li>
-              <a href="#home">INICIO</a>
-            </li>
-            <li>
-              <a href="#about">SOBRE NOSOTROS</a>
-            </li>
-            <li>
-              <a href="#books">LIBROS</a>
-            </li>
-            <li>
-              <a href="#new-release">PELÍCULAS</a>
-            </li>
-            <li>
-              <a href="#contact">CONTACTO</a>
-            </li>
-            <li>
-              <a href="#blog">BLOG</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section class="best-sellers">
-        <div class="section-title">
-          <span class="title-line"></span>
-          <h2>Libros más Vendidos</h2>
-          <span class="title-line"></span>
+        <div class="promo-dots">
+          <span class="promo-dot active"></span>
+          <span class="promo-dot"></span>
+          <span class="promo-dot"></span>
+          <span class="promo-dot"></span>
         </div>
-        <div class="books-grid">
-          <div class="book-card">
-            <div class="book-image">
-              <img src="./img/dostorres.jpg" alt="Las dos Torres" />
-              <button class="add-to-cart">AÑADIR AL CARRITO</button>
-            </div>
-            <h3 class="book-title">El señor de los anillos: Las dos torres</h3>
-            <p class="book-author">J. R. R. Tolkien</p>
-            <p class="book-price">€ 20.00</p>
+      </div>
+      <div class="promo-image">
+        <img src="./img/stackbooks.png" alt="Pila de Libros" />
+      </div>
+    </section>
+    <section class="new-releases">
+      <div class="section-title">
+        <span class="title-line"></span>
+        <h2>Nuevos Lanzamientos</h2>
+        <span class="title-line"></span>
+      </div>
+
+      <div class="books-grid">
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/superman.jpg" alt="Superman" />
+            <button class="add-to-cart">Añadir al carrito</button>
           </div>
-          <div class="book-card">
-            <div class="book-image">
-              <img src="./img/dune.jpg" alt="Dune" />
-              <button class="add-to-cart">AÑADIR AL CARRITO</button>
-            </div>
-            <h3 class="book-title">Dune</h3>
-            <p class="book-author">Frank Herbert</p>
-            <p class="book-price">€ 18.00</p>
-          </div>
-          <div class="book-card">
-            <div class="book-image">
-              <img src="./img/quijote.jpg" alt="Quijote" />
-              <button class="add-to-cart">AÑADIR AL CARRITO</button>
-            </div>
-            <h3 class="book-title">Don Quijote de la Mancha</h3>
-            <p class="book-author">Miguel de Cervantes</p>
-            <p class="book-price">€ 25.00</p>
-          </div>
-          <div class="book-card">
-            <div class="book-image">
-              <img src="./img/gatsby.jpg" alt="El Gran Gatsby" />
-              <button class="add-to-cart">AÑADIR AL CARRITO</button>
-            </div>
-            <h3 class="book-title">El gran Gatsby</h3>
-            <p class="book-author">F. Scott Fitzgerald</p>
-            <p class="book-price">€ 15.00</p>
-          </div>
+          <h3 class="book-title">Superman</h3>
+          <p class="book-author">James Gunn</p>
+          <p class="book-price">€ 15.00</p>
         </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/unabatalla.jpg" alt="Una Batalla Tras Otra" />
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+          <h3 class="book-title">Una Batalla Tras Otra</h3>
+          <p class="book-author">Paul Thomas Anderson</p>
+          <p class="book-price">€ 20.00</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/lacanguro.jpg" alt="La Canguro" />
+            <button class="add-to-cart">Añadir Al Carrito</button>
+          </div>
+          <h3 class="book-title">La Canguro</h3>
+          <p class="book-author">Pablo Rivero</p>
+          <p class="book-price">€ 21.75</p>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="./img/predator.jpg" alt="Predator Badlands" />
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+          <h3 class="book-title">Predator Badlands</h3>
+          <p class="book-author">Dan Trachtenberg</p>
+          <p class="book-price">€ 19.75</p>
+        </div>
+      </div>
+
+      <div class="new-releases-footer">
         <div class="carousel-dots">
           <span class="dot active"></span>
           <span class="dot"></span>
@@ -118,117 +231,38 @@
           <span class="dot"></span>
         </div>
         <a href="#all-products" class="view-all">Todos Los Productos →</a>
-      </section>
-      <section class="awards-banner">
-        <div class="banner-content">
-          <h3>2026 Premios Nacionales de la Literatura</h3>
-          <button class="explore-btn">Explorar</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Libros y Películas</h3>
+          <p>Venta de Libros y Películas. Imaginación ilimitada.</p>
         </div>
-        <div class="banner-image">
-          <img src="./img/trophy.svg" alt="Trophy and Books" />
+        <div class="footer-section">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
         </div>
-      </section>
-      <section class="featured-book">
-        <div class="featured-book-image">
-          <img src="./img/palabrasradiantes.jpg" alt="Palabras Radiantes" />
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>apruebanosPeter@gmail.com</p>
+          <p>+34 7061543815</p>
+          <p>Rivas-Vaciamadrid, Madrid - 28521</p>
         </div>
-        <div class="featured-book-content">
-          <h2>Featured Book</h2>
-          <p class="featured-author">BRANDON SANDERSON</p>
-          <h3 class="featured-title">Palabras Radiantes</h3>
-          <p class="featured-description">
-            Los Caballeros Radiantes deben volver a alzarse. Los antiguos
-            juramentos por fin se han pronunciado. Los hombres buscan lo que se
-            perdió. Temo que la búsqueda los destruya.
-          </p>
-          <p class="featured-price">€ 25.00</p>
-          <button class="view-more-btn">VER MÁS →</button>
-        </div>
-      </section>
-      <section class="promo-banner">
-        <div class="promo-content">
-          <h2>Todos nuestros libros al 50%!<br />¡No te piedas esta oferta!</h2>
-          <p class="promo-description">
-            Este año, ¡todos nuestros libros están disponibles al 50%!
-          </p>
-          <div class="countdown">
-            <div class="countdown-item">
-              <span class="countdown-number">768</span>
-              <span class="countdown-label">DÍAS</span>
-            </div>
-            <div class="countdown-item">
-              <span class="countdown-number">01</span>
-              <span class="countdown-label">HOUR</span>
-            </div>
-            <div class="countdown-item">
-              <span class="countdown-number">27</span>
-              <span class="countdown-label">MIN</span>
-            </div>
-            <div class="countdown-item">
-              <span class="countdown-number">55</span>
-              <span class="countdown-label">SEG</span>
-            </div>
-          </div>
-          <div class="promo-dots">
-            <span class="promo-dot active"></span>
-            <span class="promo-dot"></span>
-            <span class="promo-dot"></span>
-            <span class="promo-dot"></span>
+        <div class="footer-section">
+          <h3>Aceptamos</h3>
+          <div class="payment-icons">
+            <img src="./img/visa.svg" alt="Visa" />
+            <img src="./img/mastercard.svg" alt="Mastercard" />
+            <img src="./img/american.svg" alt="American Express" />
           </div>
         </div>
-        <div class="promo-image">
-          <img src="./img/stackbooks.png" alt="Pila de Libros" />
-        </div>
-      </section>
-      <section class="new-releases">
-        <h2>New Releases</h2>
-        <!-- Contenido aquí -->
-      </section>
-      <section class="essentials">
-        <h2>Essentials</h2>
-        <!-- Contenido aquí -->
-      </section>
-      <section class="reviews">
-        <h2>Reviews</h2>
-        <!-- Contenido aquí -->
-      </section>
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Libros y Películas</h3>
-            <p>Venta de Libros y Películas. Imaginación ilimitada.</p>
-          </div>
-          <div class="footer-section">
-            <h3>Links</h3>
-            <ul>
-              <li><a href="#home">Inicio</a></li>
-              <li><a href="#about">Sobre Nosotros</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contacto</h3>
-            <p>apruebanosPeter@gmail.com</p>
-            <p>+34 7061543815</p>
-            <p>Rivas-Vaciamadrid, Madrid - 28521</p>
-          </div>
-          <div class="footer-section">
-            <h3>Aceptamos</h3>
-            <div class="payment-icons">
-              <img src="visa-icon.png" alt="Visa" />
-              <img src="mastercard-icon.png" alt="Mastercard" />
-              <img src="amex-icon.png" alt="American Express" />
-            </div>
-          </div>
-        </div>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-          <p>
-            &copy; 2026 Books and Movies. All rights reserved. | Héctor & Nicola
-            ❤️
-          </p>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Libros y Películas. Todos los derechos reservados.

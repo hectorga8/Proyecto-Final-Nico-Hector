@@ -17,8 +17,6 @@ body {
         "featured-book" auto
         "promo-banner" auto
         "new-releases" auto
-        "essentials" auto
-        "reviews" auto
         "footer" auto
         / 1fr;
     gap: 8px;
@@ -263,7 +261,7 @@ body {
 }
 
 .book-price {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #ff5742;
 }
@@ -276,8 +274,8 @@ body {
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #ddd;
     cursor: pointer;
@@ -298,7 +296,7 @@ body {
     color: #ff5742;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .view-all:hover {
@@ -534,6 +532,32 @@ body {
     object-fit: contain;
 }
 
+/*---------- NEW RELEASES SECTION ----------*/
+/* Hereda los estilos base de .best-sellers (.section-title, .books-grid, .book-card, etc.) */
+.new-releases {
+    grid-area: new-releases;
+    padding: 60px 50px;
+    background-color: #f8f8f8;
+}
+
+/* Footer de la sección: dots + link apilados y centrados */
+.new-releases-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.new-releases-footer .carousel-dots {
+    margin-bottom: 0;
+}
+
+.new-releases-footer .view-all {
+    position: static;
+}
+
 /*---------FOOTER----------*/
 
 .footer {
@@ -589,7 +613,7 @@ body {
 }
 
 .payment-icons img {
-    height: 30px;
+    height: 60px;
     width: auto;
     object-fit: contain;
 }
