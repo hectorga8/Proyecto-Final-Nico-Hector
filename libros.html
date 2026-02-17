@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo - H&N Cozy Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="libros.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <header class="header">
+        <div class="header-top">
+          <div class="logo">
+            <img
+              src="./img/logobueno.png"
+              alt="H&N Cozy Bookstore Logo"
+              class="logo-img"
+            />
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar" />
+            <button type="submit">
+              <img src="./img/search.svg" alt="Buscar" class="search-icon" />
+            </button>
+          </div>
+          <div class="header-icons">
+            <a href="#account"
+              ><img src="./img/user.svg" alt="Account" class="icon" />CUENTA</a
+            >
+            <a href="#cart"
+              ><img src="./img/cart.svg" alt="Cart" class="icon" />CARRITO</a
+            >
+            <a href="#wishlist"
+              ><img
+                src="./img/heart.svg"
+                alt="Wishlist"
+                class="icon"
+              />DESEADOS</a
+            >
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="libros.html" class="active-link">LIBROS</a></li>
+            <li><a href="#movies">PELÍCULAS</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="catalog-filters">
+        <div class="filter-container">
+          <button class="filter-btn active">Todos</button>
+          <button class="filter-btn">Fantasía</button>
+          <button class="filter-btn">Ciencia Ficción</button>
+          <button class="filter-btn">Terror</button>
+          <button class="filter-btn">Clásicos</button>
+          <button class="filter-btn">Ciencia</button>
+          <button class="filter-btn">Historia</button>
+
+          <select class="sort-select">
+            <option>Ordenar por: Relevancia</option>
+            <option>Precio: Menor a Mayor</option>
+            <option>Novedades</option>
+          </select>
+        </div>
+      </section>
+
+      <main class="catalog-container">
+        <section class="genre-row">
+          <h2 class="genre-title">Fantasía Épica</h2>
+          <div class="books-grid">
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/dostorres.jpg" alt="Las dos Torres" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Las Dos Torres</h3>
+              <p class="book-author">J. R. R. Tolkien</p>
+              <p class="book-price">€ 20.00</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="./img/palabrasradiantes.jpg"
+                  alt="Palabras Radiantes"
+                />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Palabras Radiantes</h3>
+              <p class="book-author">Brandon Sanderson</p>
+              <p class="book-price">€ 25.00</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="./img/elhobbit.jpg"
+                  alt="el hobbit"
+                />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">El Hobbit</h3>
+              <p class="book-author">J. R. R. Tolkien</p>
+              <p class="book-price">€ 20.00</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="./img/tronos.jpeg"
+                  alt="Juego de Tronos"
+                />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Juego de Tronos</h3>
+              <p class="book-author">George R. R. Martin</p>
+              <p class="book-price">€ 26.50</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="./img/harrypotter.jpg"
+                  alt="Harry Potter"
+                />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Harry Potter y la Piedra Filosofal</h3>
+              <p class="book-author">J. K. Rowling</p>
+              <p class="book-price">€ 16.10</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="./img/viento.jpg"
+                  alt="El nombre del viento"
+                />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">El Nombre del Viento</h3>
+              <p class="book-author">Patrick Rothfuss</p>
+              <p class="book-price">€ 25.55</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="genre-row">
+          <h2 class="genre-title">Ciencia Ficción</h2>
+          <div class="books-grid">
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/dune.jpg" alt="Dune" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Dune</h3>
+              <p class="book-author">Frank Herbert</p>
+              <p class="book-price">€ 18.00</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/farenhei.jpg" alt="Fahrenheit 451" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Fahrenheit 451</h3>
+              <p class="book-author">Ray Bradbury</p>
+              <p class="book-price">€ 12.30</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/robot.jpg" alt="Yo, Robot" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Yo, Robot</h3>
+              <p class="book-author">Isaac Asimov</p>
+              <p class="book-price">€ 10.40</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/cronicas.jpg" alt="Cronicas Marcianas" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Cronicas Marcianas</h3>
+              <p class="book-author">Ray Bradbury</p>
+              <p class="book-price">€ 10.40</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/veinte.jpg" alt="Veinte mil Leguas de Viaje Submarino" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Veinte mil Leguas de Viaje Submarino</h3>
+              <p class="book-author">Julio Verne</p>
+              <p class="book-price">€ 5.95</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/odisea.jpg" alt="2001: Una odisea espacial" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">2001: Una odisea espacial</h3>
+              <p class="book-author">Arthur C. Clarke</p>
+              <p class="book-price">€ 21.50</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="genre-row">
+          <h2 class="genre-title">Clásicos Inmortales</h2>
+          <div class="books-grid">
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/quijote.jpg" alt="Quijote" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">Don Quijote</h3>
+              <p class="book-author">Miguel de Cervantes</p>
+              <p class="book-price">€ 25.00</p>
+            </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img src="./img/gatsby.jpg" alt="El Gran Gatsby" />
+                <button class="add-to-cart">AÑADIR AL CARRITO</button>
+              </div>
+              <h3 class="book-title">El Gran Gatsby</h3>
+              <p class="book-author">F. Scott Fitzgerald</p>
+              <p class="book-price">€ 15.00</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Libros y Películas</h3>
+            <p>Venta de Libros y Películas. Imaginación ilimitada.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre Nosotros</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>apruebanosPeter@gmail.com</p>
+            <p>+34 7061543815</p>
+            <p>Rivas-Vaciamadrid, Madrid - 28521</p>
+          </div>
+          <div class="footer-section">
+            <h3>Aceptamos</h3>
+            <div class="payment-icons">
+              <img src="./img/visa.svg" alt="Visa" />
+              <img src="./img/mastercard.svg" alt="Mastercard" />
+              <img src="./img/american.svg" alt="American Express" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Libros y Películas. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

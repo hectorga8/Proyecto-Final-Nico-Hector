@@ -1,0 +1,92 @@
+/*---------- SOBRE NOSOTROS ESPECÍFICO ----------*/
+
+.about-main {
+    padding: 60px 50px;
+    background-color: #f8f8f8; /* Mismo fondo que el index */
+}
+
+.about-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #3d3d8f; /* Tu color principal */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-image-frame {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px #ff5742; /* Sombra sólida naranja para estilo moderno */
+}
+
+.about-image-frame img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.about-image-frame:hover img {
+    transform: scale(1.05);
+}
+
+/* CARDS DE MISIÓN Y VISIÓN */
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Sombra suave como en tus libros */
+    border-bottom: 4px solid #5d4fb5; /* Detalle en púrpura */
+}
+
+.about-card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    color: #3d3d8f;
+    margin-bottom: 15px;
+}
+
+/* MARCADOR DE PÁGINA ACTIVA EN NAV */
+/*
+.main-nav a.active {
+    color: #5d4fb5;
+    border-bottom: 2px solid #ff5742;
+}
+    */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-content, .grid-about {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+}
