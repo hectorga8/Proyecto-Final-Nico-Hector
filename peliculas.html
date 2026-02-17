@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Películas - H&N Cozy Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="peliculas.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <header class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="./img/logobueno.png" alt="H&N Cozy Bookstore Logo" class="logo-img" />
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar películas..." />
+                    <button type="submit">
+                        <img src="./img/search.svg" alt="Buscar" class="search-icon" />
+                    </button>
+                </div>
+                <div class="header-icons">
+                    <a href="#account"><img src="./img/user.svg" alt="Account" class="icon" />CUENTA</a>
+                    <a href="#cart"><img src="./img/cart.svg" alt="Cart" class="icon" />CARRITO</a>
+                    <a href="#wishlist"><img src="./img/heart.svg" alt="Wishlist" class="icon" />DESEADOS</a>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="libros.html">LIBROS</a></li>
+                    <li><a href="peliculas.html">PELÍCULAS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="catalog-filters">
+            <div class="filter-container">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Acción</button>
+                <button class="filter-btn">Ciencia Ficción</button>
+                <button class="filter-btn">Animación</button>
+                <button class="filter-btn">Drama</button>
+
+                <select class="sort-select">
+                    <option>Ordenar por: Relevancia</option>
+                    <option>Precio: Menor a Mayor</option>
+                    <option>Año de Estreno</option>
+                </select>
+            </div>
+        </section>
+
+        <main class="catalog-container">
+            <section class="genre-row">
+                <h2 class="genre-title">Acción y Aventura</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/superman.jpg" alt="Superman" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Superman</h3>
+                        <p class="movie-author">James Gunn • 2025</p>
+                        <p class="movie-price">€ 15.00</p>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/predator.jpg" alt="Predator Badlands" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Predator Badlands</h3>
+                        <p class="movie-author">Dan Trachtenberg • 2025</p>
+                        <p class="movie-price">€ 19.75</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/topgun.jpg" alt="TopGun Maverick" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">TopGun Maverick</h3>
+                        <p class="movie-author">Joseph Kosinski • 2022</p>
+                        <p class="movie-price">€ 32.50</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/corredor.jpg" alt="El Corredor del Laberinto" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">El Corredor del Laberinto</h3>
+                        <p class="movie-author">Wes Ball • 2014</p>
+                        <p class="movie-price">€ 10.75</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/spiderman2.jpg" alt="Spiderman 2" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Spiderman 2</h3>
+                        <p class="movie-author">Sam Raimi • 2023</p>
+                        <p class="movie-price">€ 10.72</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/origen.jpg" alt="Origen" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Origen</h3>
+                        <p class="movie-author">Christopher Nolan • 2010</p>
+                        <p class="movie-price">€ 19.75</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="genre-row">
+                <h2 class="genre-title">Ciencia Ficción</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/dunepeli.jpg" alt="Dune" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Dune: Parte Uno</h3>
+                        <p class="movie-author">Denis Villeneuve • 2021</p>
+                        <p class="movie-price">€ 18.00</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/bladerunner.jpg" alt="Blade Runner" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Blade Runner</h3>
+                        <p class="movie-author">Ridley Scott • 1982</p>
+                        <p class="movie-price">€ 28.00</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/intere.jpg" alt="Interestelar" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Interestelar</h3>
+                        <p class="movie-author">Christopher Nolan • 2014</p>
+                        <p class="movie-price">€ 9.99</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/avatar.jpg" alt="Avatar" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Avatar</h3>
+                        <p class="movie-author">James Cameron • 2009</p>
+                        <p class="movie-price">€ 18.70</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/arrival.jpg" alt="La Llegada" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">La Llegada</h3>
+                        <p class="movie-author">Denis Villeneuve • 2016</p>
+                        <p class="movie-price">€ 10.99</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/gravity.jpg" alt="Gravity" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Gravity</h3>
+                        <p class="movie-author">Alfonso Cuarón • 2013</p>
+                        <p class="movie-price">€ 12.10</p>
+                    </div>
+                </div>
+            </section>
+            <section class="genre-row">
+                <h2 class="genre-title">Animación</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/monstr.jpg" alt="Monstruos S.A" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Monstruos S.A</h3>
+                        <p class="movie-author">Pete Docter • 2002</p>
+                        <p class="movie-price">€ 11.99</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/shrek.jpeg" alt="Shrek" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Shrek</h3>
+                        <p class="movie-author">Andrew Adamson, Vicky Jenson • 2001</p>
+                        <p class="movie-price">€ 19.99</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/toystory.jpeg" alt="Toy Story 4" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Toy Story 4</h3>
+                        <p class="movie-author">Josh Cooley • 2019</p>
+                        <p class="movie-price">€ 14.91</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/Up.jpg" alt="Up" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Up</h3>
+                        <p class="movie-author">Pete Docter • 2009</p>
+                        <p class="movie-price">€ 25.00</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/gigante.jpg" alt="El Gigante de Hierro" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">El Gigante de Hierro</h3>
+                        <p class="movie-author">Brad Bird • 1999</p>
+                        <p class="movie-price">€ 11.95</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/your-name.jpg" alt="Your Name" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Your Name</h3>
+                        <p class="movie-author">Makoto Shinkai • 2016</p>
+                        <p class="movie-price">€ 14.24</p>
+                    </div>
+                </div>
+            </section>
+            <section class="genre-row">
+                <h2 class="genre-title">Drama</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/american.jpg" alt="American History X" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">American History X</h3>
+                        <p class="movie-author">Tony Kaye • 1999</p>
+                        <p class="movie-price">€ 11.95</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/lista.jpg" alt="La Lista de Schindler" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">La Lista de Schindler</h3>
+                        <p class="movie-author">Steven Spielberg • 1994</p>
+                        <p class="movie-price">€ 19.99</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/jerry.jpg" alt="Jerry Maguire" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Jerry Maguire</h3>
+                        <p class="movie-author">Cameron Crowe • 1996</p>
+                        <p class="movie-price">€ 7.38</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/pianista.jpg" alt="El Pianista" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">El Pianista</h3>
+                        <p class="movie-author">Roman Polanski • 2002</p>
+                        <p class="movie-price">€ 12.00</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/sully.jpg" alt="Sully" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Sully</h3>
+                        <p class="movie-author">Clint Eastwood • 2016</p>
+                        <p class="movie-price">€ 14.99</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-image">
+                            <img src="./img/imposible.jpg" alt="Lo Imposible" />
+                            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+                        </div>
+                        <h3 class="movie-title">Lo Imposible</h3>
+                        <p class="movie-author">Juan Antonio Bayona • 2012</p>
+                        <p class="movie-price">€ 15.90</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Libros y Películas</h3>
+                    <p>Venta de Libros y Películas. Imaginación ilimitada.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>apruebanosPeter@gmail.com</p>
+                    <p>+34 7061543815</p>
+                    <p>Rivas-Vaciamadrid, Madrid - 28521</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Aceptamos</h3>
+                    <div class="payment-icons">
+                        <img src="./img/visa.svg" alt="Visa" />
+                        <img src="./img/mastercard.svg" alt="Mastercard" />
+                        <img src="./img/american.svg" alt="American Express" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Libros y Películas. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

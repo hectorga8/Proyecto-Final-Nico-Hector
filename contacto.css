@@ -1,8 +1,6 @@
-/* Estilos para la página de Contacto */
-
 .contact-container {
     padding: 60px 100px;
-    background-color: #f8f8f8; /* */
+    background-color: #f8f8f8; 
 }
 
 .contact-grid {
@@ -13,7 +11,7 @@
     margin: 0 auto;
 }
 
-/* Tarjetas de Información Izquierda */
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -33,7 +31,7 @@
 }
 
 .info-card h3 {
-    color: #3d3d8f; /* Púrpura corporativo */
+    color: #3d3d8f; 
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -43,7 +41,7 @@
     font-size: 15px;
 }
 
-/* Formulario Derecha */
+
 .contact-form {
     background-color: white;
     padding: 40px;
@@ -78,14 +76,14 @@
 
 .form-group input:focus, 
 .form-group textarea:focus {
-    border-color: #5d4fb5; /* */
+    border-color: #5d4fb5; 
 }
 
-/* Botón de envío */
+
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background-color: #ff5742; /* Naranja corporativo */
+    background-color: #ff5742; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -101,13 +99,7 @@
     transform: translateY(-2px);
 }
 
-/* Estilo para el link activo en el Nav */
-.active-link {
-    color: #5d4fb5 !important;
-    font-weight: 700;
-}
 
-/* Responsive */
 @media (max-width: 900px) {
     .contact-grid {
         grid-template-columns: 1fr;

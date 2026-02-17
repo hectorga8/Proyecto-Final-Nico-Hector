@@ -1,22 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // === 1. BUSCADOR EN TIEMPO REAL ===
+ 
     const searchInput = document.querySelector('.search-bar input');
-    const bookCards = document.querySelectorAll('.book-card');
-
+    
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
-            bookCards.forEach(card => {
-                const title = card.querySelector('.book-title').textContent.toLowerCase();
-                const author = card.querySelector('.book-author').textContent.toLowerCase();
+            
+            const allCards = document.querySelectorAll('.book-card, .movie-card');
+
+            allCards.forEach(card => {
                 
-                card.style.display = (title.includes(searchTerm) || author.includes(searchTerm)) 
+                const title = card.querySelector('.book-title, .movie-title').textContent.toLowerCase();
+                const info = card.querySelector('.book-author, .movie-author').textContent.toLowerCase();
+                
+                
+                card.style.display = (title.includes(searchTerm) || info.includes(searchTerm)) 
                     ? 'block' : 'none';
             });
         });
     }
 
-    // === 2. FILTROS POR CATEGORÍA (Corregido para Ciencia vs Ciencia Ficción) ===
+    
     const filterButtons = document.querySelectorAll('.filter-btn');
     
     filterButtons.forEach(btn => {
@@ -33,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (category === 'todos') {
                     row.style.display = 'block';
                 } 
-                // NUEVA LÓGICA: Si el filtro es "ciencia", ocultamos si el título contiene "ficción"
+                
                 else if (category === 'ciencia' && rowTitle.includes('ficción')) {
                     row.style.display = 'none';
                 }
-                // Si el filtro es "ciencia ficción", mostramos la fila correspondiente
+                
                 else if (rowTitle.includes(category)) {
                     row.style.display = 'block';
                 } 
@@ -48,15 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === 3. NOTIFICACIÓN AL AÑADIR AL CARRITO ===
+    
     const cartButtons = document.querySelectorAll('.add-to-cart');
     cartButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const bookTitle = button.closest('.book-card').querySelector('.book-title').textContent;
+
+            const card = button.closest('.book-card, .movie-card');
+            const itemTitle = card.querySelector('.book-title, .movie-title').textContent;
             
             const toast = document.createElement('div');
             toast.className = 'cart-toast';
-            toast.innerHTML = `✅ <strong>${bookTitle}</strong> añadido al carrito`;
+            toast.innerHTML = `✅ <strong>${itemTitle}</strong> añadido al carrito`;
             document.body.appendChild(toast);
 
             setTimeout(() => {
@@ -66,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === 4. CUENTA ATRÁS DINÁMICA ===
+    
     const countdownElements = {
         days: document.querySelector('.countdown-item:nth-child(1) .countdown-number'),
         hours: document.querySelector('.countdown-item:nth-child(2) .countdown-number'),
@@ -78,6 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let totalSeconds = 768 * 24 * 3600 + 1 * 3600 + 27 * 60 + 55;
         setInterval(() => {
             totalSeconds--;
+            if(totalSeconds < 0) return;
+
             const d = Math.floor(totalSeconds / (24 * 3600));
             const h = Math.floor((totalSeconds % (24 * 3600)) / 3600);
             const m = Math.floor((totalSeconds % 3600) / 60);
